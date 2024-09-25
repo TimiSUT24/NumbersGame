@@ -59,6 +59,15 @@ namespace NumbersGame
                         Console.WriteLine("Kan bara Välja från 1-3!!!");
                         return; 
                 }
+
+                guessLeft = 5;
+                Console.WriteLine("Dags att köra!!!\n Jag tänker på ett nummer kan du gissa vilket? Du får 5 försök.");
+
+                while (guessLeft > 0)
+                {
+                    Console.WriteLine("Försök kvar:" + guessLeft);
+                    guessLeft--;
+                }
             }
         }
 
