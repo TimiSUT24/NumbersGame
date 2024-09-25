@@ -41,7 +41,24 @@ namespace NumbersGame
                 Console.WriteLine("Välkommen till gissa numret!");
                 Console.WriteLine("Välj svårighetsgrad |1| |2| |3|");
                 int difficulty = Convert.ToInt32(Console.ReadLine());
-                Random num = new Random(); 
+                Random num = new Random();
+
+                switch (difficulty)
+                {
+                    case 1:
+                        number = num.Next();
+                        break;
+                    case 2:
+                        number = num.Next();
+                        break;
+                    case 3:
+                        number = num.Next();
+                        break;
+
+                    default:
+                        Console.WriteLine("Kan bara Välja från 1-3!!!");
+                        return; 
+                }
             }
         }
 
