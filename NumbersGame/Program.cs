@@ -67,6 +67,11 @@ namespace NumbersGame
                 {
                     Console.WriteLine("Försök kvar:" + guessLeft);
                     guessLeft--;
+                    Console.WriteLine("Gissa:");
+
+                    user = Convert.ToInt32(Console.ReadLine());
+
+
                 }
             }
         }
