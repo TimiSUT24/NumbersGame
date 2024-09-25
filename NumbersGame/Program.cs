@@ -17,6 +17,15 @@ namespace NumbersGame
                 Console.WriteLine("Fel");
                 Console.WriteLine();
             }
+
+            if(user < number)
+            {
+                Console.WriteLine("Gissa Högre");
+            }
+            else if(user > number)
+            {
+                Console.WriteLine("Gissa lägre"); 
+            }
         }
 
         static void Main(string[] args)
