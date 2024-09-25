@@ -20,7 +20,7 @@ namespace NumbersGame
 
             if(user < number)
             {
-                Console.WriteLine("Gissa Högre");
+                Console.WriteLine("Gissa högre");
             }
             else if(user > number)
             {
@@ -46,13 +46,13 @@ namespace NumbersGame
                 switch (difficulty)
                 {
                     case 1:
-                        number = num.Next();
+                        number = num.Next(1,11);
                         break;
                     case 2:
-                        number = num.Next();
+                        number = num.Next(1,21);
                         break;
                     case 3:
-                        number = num.Next();
+                        number = num.Next(1,31);
                         break;
 
                     default:
@@ -61,11 +61,11 @@ namespace NumbersGame
                 }
 
                 guessLeft = 5;
-                Console.WriteLine("Dags att köra!!!\n Jag tänker på ett nummer kan du gissa vilket? Du får 5 försök.");
+                Console.WriteLine("Dags att köra!!!\nJag tänker på ett nummer kan du gissa vilket? Du får 5 försök.");
 
                 while (guessLeft > 0)
                 {
-                    Console.WriteLine("Försök kvar:" + guessLeft);
+                    Console.WriteLine("Försök kvar: " + guessLeft);
                     guessLeft--;
                     Console.WriteLine("Gissa:");
 
@@ -80,7 +80,7 @@ namespace NumbersGame
 
                     if(guessLeft == 0)
                     {
-                        Console.WriteLine("Du förlora");
+                        Console.WriteLine("Du förlora!!");
                         break;
                     }
                 }
