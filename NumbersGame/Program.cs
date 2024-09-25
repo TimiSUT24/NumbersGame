@@ -71,7 +71,9 @@ namespace NumbersGame
 
                     user = Convert.ToInt32(Console.ReadLine());
 
+                    bool userwon = Checkguess(user, number, guessLeft);
 
+                    
                 }
             }
         }
