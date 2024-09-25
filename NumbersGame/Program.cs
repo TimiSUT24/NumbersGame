@@ -35,6 +35,14 @@ namespace NumbersGame
             bool run = true;
             int number = 0;
             int guessLeft; 
+
+            while (run)
+            {
+                Console.WriteLine("Välkommen till gissa numret!");
+                Console.WriteLine("Välj svårighetsgrad |1| |2| |3|");
+                int difficulty = Convert.ToInt32(Console.ReadLine());
+                Random num = new Random(); 
+            }
         }
 
     }
