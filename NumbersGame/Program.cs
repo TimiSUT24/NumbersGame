@@ -73,7 +73,16 @@ namespace NumbersGame
 
                     bool userwon = Checkguess(user, number, guessLeft);
 
-                    
+                    if (userwon)
+                    {
+                        break; 
+                    }
+
+                    if(guessLeft == 0)
+                    {
+                        Console.WriteLine("Du förlora");
+                        break;
+                    }
                 }
             }
         }
