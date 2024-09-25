@@ -84,6 +84,18 @@ namespace NumbersGame
                         break;
                     }
                 }
+
+                Console.WriteLine("Vill du köra mer? Tryck y/n ");
+                ConsoleKeyInfo runMore = Console.ReadKey();
+                if (runMore.Key == ConsoleKey.Y)
+                {
+                    Console.WriteLine();
+                    Console.WriteLine();
+                }
+                else
+                {
+                    break; 
+                }
             }
         }
 
