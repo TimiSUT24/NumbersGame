@@ -87,7 +87,7 @@ namespace NumbersGame
 
                     if (guessLeft == 0)
                     {
-                        Console.WriteLine("Du förlora!!");
+                        Console.WriteLine("Du förlora!!\nDu lyckades inte gissa talet på fem försök.");
                         break;
                     }
                 }
